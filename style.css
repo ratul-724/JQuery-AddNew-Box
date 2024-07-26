@@ -7,16 +7,16 @@
     -webkit-box-shadow: 8px 5px 45px -4px rgba(161,150,161,0.83);
 -moz-box-shadow: 8px 5px 45px -4px rgba(161,150,161,0.83);
 box-shadow: 8px 5px 45px -4px rgba(161,150,161,0.83);
-width: 35%;
+width: 300px;
 padding: 20px;
 background-color: salmon;
 position: absolute;
-left: 50%;
-top: 30%;
-transform: translate(-50%, -50%);
+left: 35%;
+top: 70px;
+/* transform: translate(-50%, -50%); */
 border-radius: 10px;
 }
-.container button{
+.container .add{
     color: rgb(0, 0, 0);
     background-color: rgb(87, 255, 132);
     padding: 10px;
@@ -29,12 +29,46 @@ border-radius: 10px;
     font-size: 14px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: bold;
+    margin: 10px;
+}
+.container .sub{
+    color: rgb(0, 0, 0);
+    background-color: rgb(87, 255, 132);
+    padding: 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    width: 130px;
+    text-align: center;
+    font-size: 14px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    margin: 10px;
+}
+.btn{
+    display: flex;
 }
 .container .category-box .input-box{
     width: 100%;
     padding: 10px;
+    padding-right: 30px;
     border-radius: 7px;
     border: none;
     margin-bottom: 7px;
 
+}
+.container .category-box{
+    position: relative;
+}
+.container .category-box .img{
+    position: absolute;
+    left: 229px;
+    top: 3.5px;
+    cursor: pointer;
+    height: 30px;
+}
+.container .category-box .img:hover{
+    opacity: 70%;
+    transition: 1s;
 }
